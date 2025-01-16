@@ -130,6 +130,62 @@ f(x) = (1 / (σ sqrt(2π))) * e^{-(x - μ)² / (2σ²)}
 
 μ = mean,    σ² = variance
 
+📌 **Central Limit Theorem** - sample mean of i.i.d. data approaches normal distribution
+
+: 중심극한정리(CLT)는 여러 개의 독립적인 표본을 반복적으로 뽑아 평균을 구하면, 그 평균들은 점점 정규 분포에 가까워진다는 개념입니다.
+
+✅ 쉽게 이해하는 방법
+
+동전을 던질 때 한 번만 던지면 앞면(1) 또는 뒷면(0)이 나옴 → 베르누이 분포
+
+하지만 100번 던져서 앞면이 나온 횟수의 평균을 여러 번 계산하면?
+
+→ 평균이 0.5 근처에서 정규 분포 모양을 띔
+
+즉, 데이터가 원래 어떤 분포를 따르든지, 표본 평균을 계속 구하면 정규 분포로 가까워짐
+
+✅ 예제
+
+학생 1000명의 시험 점수가 정규 분포가 아닐 수도 있음
+
+하지만 30명씩 랜덤으로 뽑아 평균을 구하고, 이 과정을 여러 번 반복하면?
+
+→ 그 평균들의 분포는 정규 분포를 따름!
+
+📌 **Empirical Rule** - 68%, 95%, and 99.7% of values lie within one, two, and three standard deviations of the mean
+
+: 경험적 규칙 (Empirical Rule) -> 정규 분포에서 데이터의 68%, 95%, 99.7%가 어디에 위치하는지 알려주는 규칙
+
+<img width="730" alt="Screen Shot 2025-01-17 at 2 50 11 AM" src="https://github.com/user-attachments/assets/152eee15-11ba-44bb-a07b-a026c74f0002" />
+
+✅ 예제
+시험 평균이 70점이고 표준편차가 10점일 때:
+
+- 68%의 학생들은 60~80점(70 ± 10)에 위치
+- 95%의 학생들은 50~90점(70 ± 20)에 위치
+- 99.7%의 학생들은 40~100점(70 ± 30)에 위치
+
+✅ 왜 중요할까?
+→ 우리가 특정 값이 얼마나 일반적인지(평균과 가까운지) 알 수 있음!
+
+📌 **Normal Approximation** - discrete distributions such as Binomial and Poisson can be approximated using z-scores when np, nq, and λ are greater than 10
+
+: 이항 분포와 포아송 분포도 적절한 조건을 만족하면 정규 분포처럼 사용할 수 있음
+
+
+#### 이항 분포 → 정규 분포 근사
+이항 분포  Binomial(n,p) 에서 표본 개수 𝑛 이 충분히 크고 𝑛 𝑝 와 nq=n(1−p)가 모두 10 이상이면 정규 분포로 근사 가능!
+- 동전을 10번 던지면 (n=10, p=0.5) → 이항 분포 형태
+- 동전을 100번 던지면 (n=100, p=0.5) → 정규 분포에 가까워짐
+
+
+#### 포아송 분포 → 정규 분포 근사
+
+포아송 분포 Poisson(λ) 에서 평균 𝜆 가 10 이상이면 정규 분포로 근사 가능!
+
+- 1시간 동안 고객이 평균 3명 방문하면 포아송 분포 (이산형)
+- 하지만 평균 50명이 방문하면 정규 분포로 계산 가능!
+
 ✅ When to use it?
 
 Whenever data is symmetrically distributed around a mean.(e.g., Predicting student test scores, analyzing stock returns)
@@ -160,7 +216,7 @@ When measuring time until the next event happens.(e.g., How long until the next 
 사건 사이의 시간을 예측할 때 (e.g., 고객이 다음으로 웹사이트를 방문할 때까지 걸리는 시간)
 
 
-### 📌 면접 대비 핵심 포인트
+### 면접 대비 핵심 포인트
 
 ✅ 각 분포의 특징과 언제 쓰이는지 기억하기
 
