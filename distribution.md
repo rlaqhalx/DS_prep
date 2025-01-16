@@ -1,9 +1,9 @@
-# 확률 분포 개념 정리 (Probability Distributions)
+# 📌 확률 분포 개념 정리 (Probability Distributions) & Concept
 데이터가 어떻게 분포되어 있는지를 설명하는 수학적 모델 
 
 **이산 확률 분포(Discrete)** VS **연속 확률 분포(Continuous)**
 
-# 📌 1. Discrete Probability Distributions
+# 1. Discrete Probability Distributions
 Discrete distributions describe data that takes only integer values (0,1,2,3,...).
 
 이산 확률 분포는 정수(0,1,2,3...) 값만 가질 수 있는 확률 변수의 분포를 나타냅니다.
@@ -107,7 +107,7 @@ Predicting the number of events happening in a fixed period.(e.g., How many cust
 
 일정 시간 동안 몇 번 사건이 발생하는지 예측할 때 (e.g., 웹사이트에서 1시간 동안 방문자 수)
 
-# 📌 2. Continuous Probability Distributions
+# 2. Continuous Probability Distributions
 Continuous distributions describe data that can take any real value (including decimals).
 
 연속 확률 분포는 실수 값(소수점 포함)으로 나타나는 확률 변수를 모델링합니다.
@@ -160,7 +160,7 @@ When measuring time until the next event happens.(e.g., How long until the next 
 사건 사이의 시간을 예측할 때 (e.g., 고객이 다음으로 웹사이트를 방문할 때까지 걸리는 시간)
 
 
-📌 면접 대비 핵심 포인트
+### 📌 면접 대비 핵심 포인트
 
 ✅ 각 분포의 특징과 언제 쓰이는지 기억하기
 
@@ -172,7 +172,7 @@ When measuring time until the next event happens.(e.g., How long until the next 
 
 ✅ 베르누이 → 이항 → 포아송으로 이어지는 관계 이해하기  (e.g., Bernoulli → Binomial → Poisson)
 
-🔗 관계 정리
+### 🔗 관계 정리
 
 Bernoulli → Binomial:
 
@@ -191,6 +191,32 @@ Binomial 분포에서 시행 횟수  𝑛 이 매우 크고, 성공 확률 𝑝 
 
 <img width="599" alt="Screen Shot 2025-01-17 at 1 35 39 AM" src="https://github.com/user-attachments/assets/c7012c47-91d3-4141-b885-415dd7dd6e2f" />
 
+# 📌 Concepts
 
+### Prediction Error Decomposition
+
+Prediction Error = Bias² + Variance + Irreducible Noise
+
+- Bias: Incorrect assumptions in training → model fails to capture patterns → **underfitting**
+- Variance: Model is too sensitive to training data → fails to generalize → **overfitting**
+- Bias-Variance Tradeoff: Minimizing both bias and variance is key to good model performance.
+
+
+### Methods to Reduce Bias and Variance
+- Cross Validation: Helps generalize to unseen data.
+- Dimension Reduction & Feature Selection: Prevents overfitting by reducing complexity.
+- **As variance decreases, bias increases.**
+
+
+### Types of Machine Learning Models
+
+- Parametric Models: Fixed number of parameters, independent of data size.
+- Non-Parametric Models: Flexible parameters, makes fewer assumptions about data.
+
+
+### Cross Validation Techniques
+
+- k-fold Cross Validation: Splits data into k groups, uses one for validation and the rest for training.
+- Leave-p-out Cross Validation: Uses p samples for validation and the rest for training.
 
 
