@@ -172,6 +172,22 @@ When measuring time until the next event happens.(e.g., How long until the next 
 
 ✅ 베르누이 → 이항 → 포아송으로 이어지는 관계 이해하기  (e.g., Bernoulli → Binomial → Poisson)
 
+🔗 관계 정리
+
+Bernoulli → Binomial:
+
+Bernoulli 시행을 여러 번 반복하면 Binomial 분포가 된다.
+
+즉, Binomial 분포는 여러 개의 Bernoulli 분포의 합이다.
+
+Binomial → Poisson:
+
+Binomial 분포에서 시행 횟수  𝑛 이 매우 크고, 성공 확률 𝑝 이 매우 작을 때, Poisson 분포로 근사할 수 있다.
+
+즉, 희귀한 사건이 다수의 시행에서 발생하는 경우 Poisson 분포로 모델링할 수 있다.
+
+<img width="733" alt="Screen Shot 2025-01-17 at 1 49 42 AM" src="https://github.com/user-attachments/assets/ee5279a2-ced4-4552-ae7f-d2560f7e1c95" />
+
 
 <img width="599" alt="Screen Shot 2025-01-17 at 1 35 39 AM" src="https://github.com/user-attachments/assets/c7012c47-91d3-4141-b885-415dd7dd6e2f" />
 
